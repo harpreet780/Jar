@@ -4,6 +4,7 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    box-sizing: border-box;
 }
 
 .perText {
@@ -34,7 +35,6 @@
     border-bottom-right-radius: 85px;
     width: 100%;
     overflow: hidden;
-    padding: 0px 10px;
     filter: drop-shadow(0px 4px 4px black);
 
 }
