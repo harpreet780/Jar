@@ -3,7 +3,12 @@ import "./style.css"
 const BorderJar = () => {
     const [selected, setSelected] = useState(0);
     const Hanldedate = (e) => {
-        setSelected(Number(e.target.value));
+        if (e.target.value <= 100) {
+            setSelected(Number(e.target.value));
+        }
+        else {
+            alert('Not more than 100');
+        }
     }
     const jarHeight = 400;
     const jarwidth = 400;

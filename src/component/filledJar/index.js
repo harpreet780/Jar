@@ -4,7 +4,11 @@ import "./style.css";
 const Jar = () => {
     const [selected, setSelected] = useState(0);
     const Hanldedate = (e) => {
-        setSelected(Number(e.target.value));
+        const Hanldedate = (e) => {
+            if (e.target.value <= 100) {
+                setSelected(Number(e.target.value));
+            }
+        }
     }
     const jarHeight = 400;
     const jarwidth = 400;
